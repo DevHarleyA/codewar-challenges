@@ -35,13 +35,16 @@ function countDevelopers(list) {
     
     return count
   }
-  // person objects in an array
-  // find people with JavaScript & Europe
-  // loop through array, increase counter when continent and language match
-  // return count
 
-  // Best Solution
+// Refactored
 
-  function countDevelopers(list) {
+function countDevelopers(list) {
+  // your awesome code here :)
+  return list.filter(dev => dev.continent === 'Europe' && dev.language === 'JavaScript').length 
+}
+
+// Best Solution
+
+function countDevelopers(list) {
     return list.filter(x=>x.continent=='Europe'&&x.language=='JavaScript').length
-  }
+}
